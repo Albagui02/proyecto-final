@@ -1,0 +1,32 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Juego de Preguntas y Respuestas</title>
+</head>
+<body>
+    <h1>Juego de Preguntas y Respuestas</h1>
+    
+    <subtitle>Para este juego vamos a realizar una serie de preguntas y vas a tener que responderlas.</subtitle>
+    <subtitle>Soluciones en minúsculas y tienes 15 segundos para contestar</subtitle>
+
+    <form action="javascript:void(0);" onsubmit="comenzarJuego();">
+        <label for="nombre" style="color: #ffffff;">¿Cómo te llamas?:</label>
+        <input type="text" id="nombre" name="nombre">
+        <button type="submit" id="submit-button">Enviar</button>
+    </form>
+
+    <div id="game-container" style="display:none;">
+        <div id="question"></div>
+        <input type="text" id="answer-input" placeholder="Escribe tu respuesta">
+        <button id="submit-button" onclick="submitAnswer()">Enviar Respuesta</button>
+        <div id="timer"></div>
+    </div>
+
+    <footer>Realizado por Guillermo Albarracín Vázquez, alumno de la UAX</footer>
+
+   <script src="./javascript.js"></script>
+</body>
+</html>
